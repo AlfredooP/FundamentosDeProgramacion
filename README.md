@@ -13,5 +13,5 @@ Repositorio correspondiente a los proyectos realizados en la asignatura de ***Fu
 
 ### [Diagramas de Flujo con enlace](https://github.com/AlfredooP/FundamentosDeProgramacion/tree/main/Diagramas%20de%20Flujo)
 ### [Diagramas de Flujo con relativo usando espacios](/Diagramas de Flujo)
-### [Diagramas de Flujo con relativo sin espacios](/Diagramas%de%Flujo)
+### [Diagramas de Flujo con relativo sin espacios](/Diagramas%20de%20Flujo)
 Diagramas de flujo 
