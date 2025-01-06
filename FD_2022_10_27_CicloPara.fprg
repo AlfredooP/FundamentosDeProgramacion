@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa514"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-27 09:33:48 a. m."/>
+        <attribute name="created" value="YWE1MTQ7QTUxNDsyMDIyLTEwLTI3OzA5OjE1OjE3IGEuIG0uOzIwMjM="/>
+        <attribute name="edited" value="YWE1MTQ7QTUxNDsyMDIyLTEwLTI3OzA5OjMzOjQ4IGEuIG0uOzc7MjE0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="Letrero" type="String" array="False" size=""/>
+            <output expression="&quot;Letrero a mostrar: &quot;" newline="True"/>
+            <input variable="letrero"/>
+            <output expression="&quot;&#191;Cuantas veces?&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;i = &quot; &amp; i &amp; &quot; &quot; &amp; letrero" newline="True"/>
+            </for>
+            <output expression="&quot;i = &quot; &amp; i &amp; &quot; &quot; &amp; letrero &amp; &quot; (fuera del ciclo)&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

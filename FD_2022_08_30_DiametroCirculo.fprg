@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-30 09:47:58 a. m."/>
+        <attribute name="created" value="YWE1MTA7QTUxMDsyMDIyLTA4LTMwOzA5OjI4OjI0IGEuIG0uOzIwMTg="/>
+        <attribute name="edited" value="YWE1MTA7QTUxMDsyMDIyLTA4LTMwOzA5OjQ3OjU4IGEuIG0uOzQ7MjEzNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, diametro, radio" type="Real" array="False" size=""/>
+            <output expression="&quot;Area del circulo&quot;" newline="True"/>
+            <input variable="area"/>
+            <assign variable="radio" expression="SQRT(area / PI)"/>
+            <assign variable="diametro" expression="radio * 2"/>
+            <output expression="&quot;El diametro del circulo es &quot; &amp; diametro" newline="True"/>
+            <output expression="&quot;Nota, se considera un valor de pi de &quot; &amp; PI" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

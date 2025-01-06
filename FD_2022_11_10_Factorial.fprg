@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa514"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-10 09:27:44 a. m."/>
+        <attribute name="created" value="YWE1MTQ7QTUxNDsyMDIyLTExLTEwOzA5OjE2OjM5IGEuIG0uOzIwMjE="/>
+        <attribute name="edited" value="YWE1MTQ7QTUxNDsyMDIyLTExLTEwOzA5OjI3OjQ0IGEuIG0uOzE7MjEyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, fac, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;N&#250;mero&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="fac" expression="1"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="fac" expression="fac * i"/>
+            </for>
+            <output expression="n &amp; &quot;! = &quot; &amp; fac" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

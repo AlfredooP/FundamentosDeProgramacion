@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-02 09:29:14 a. m."/>
+        <attribute name="created" value="YWE1MTA7QTUxMDsyMDIyLTA5LTAyOzA5OjA5OjAxIGEuIG0uOzIwMTI="/>
+        <attribute name="edited" value="YWE1MTA7QTUxMDsyMDIyLTA5LTAyOzA5OjI5OjE0IGEuIG0uOzM7MjEyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lado, area, perimetro, altura" type="Real" array="False" size=""/>
+            <output expression="&quot;Lado del triangulo equilatero&quot;" newline="True"/>
+            <input variable="lado"/>
+            <assign variable="perimetro" expression="lado*3"/>
+            <assign variable="altura" expression="SQRT(3)/2*lado"/>
+            <assign variable="area" expression="lado*altura/2"/>
+            <output expression="&quot;Area= &quot; &amp; area" newline="True"/>
+            <output expression="&quot;Perimetro= &quot; &amp; Perimetro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa525"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-14 09:50:27 a. m."/>
+        <attribute name="created" value="YWE1MjU7QTUyNTsyMDIyLTExLTE0OzA5OjI0OjAzIGEuIG0uOzIwMTk="/>
+        <attribute name="edited" value="YWE1MjU7QTUyNTsyMDIyLTExLTE0OzA5OjUwOjI3IGEuIG0uOzI7MjEzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, b, prom" type="Real" array="False" size=""/>
+            <output expression="&quot;Raiz del n&#250;mero&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n &lt; 0">
+                <then>
+                    <output expression="&quot;Un n&#250;mero negativo no tiene raiz cuadrada en el dominio de los n&#250;meros reales&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="a" expression="n"/>
+                    <assign variable="b" expression="1"/>
+                    <while expression="Abs(a-b) &gt; 0.000000001">
+                        <assign variable="prom" expression="(a+b)/2"/>
+                        <assign variable="a" expression="prom"/>
+                        <assign variable="b" expression="n/a"/>
+                    </while>
+                    <output expression="&quot;Ra&#237;z cuadrada de &quot; &amp; n &amp; &quot; = &quot; &amp; a" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

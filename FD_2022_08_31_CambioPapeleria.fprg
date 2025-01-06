@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa506"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-31 09:30:14 a. m."/>
+        <attribute name="created" value="YWE1MDY7QTUwNjsyMDIyLTA4LTMxOzA5OjEzOjE1IGEuIG0uOzIwMjM="/>
+        <attribute name="edited" value="YWE1MDY7QTUwNjsyMDIyLTA4LTMxOzA5OjMwOjE0IGEuIG0uOzU7MjEzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pago, precioCuaderno, precioPluma, cambio, total" type="Real" array="False" size=""/>
+            <declare name="cuadernos, plumas" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cantidad de cuadernos&quot;" newline="True"/>
+            <input variable="cuadernos"/>
+            <output expression="&quot;Precio de un cuaderno&quot;" newline="True"/>
+            <input variable="precioCuaderno"/>
+            <output expression="&quot;Cantidad de plumas&quot;" newline="True"/>
+            <input variable="plumas"/>
+            <output expression="&quot;Precio de una pluma&quot;" newline="True"/>
+            <input variable="precioPluma"/>
+            <assign variable="total" expression="cuadernos * precioCuaderno + plumas * precioPluma"/>
+            <output expression="&quot;Total a pagar: $&quot; &amp; total" newline="True"/>
+            <output expression="&quot;Su pago&quot;" newline="True"/>
+            <input variable="pago"/>
+            <assign variable="cambio" expression="pago - total"/>
+            <output expression="&quot;Su cambio: $&quot; &amp; cambio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

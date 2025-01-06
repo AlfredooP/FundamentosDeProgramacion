@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-23 09:42:47 a. m."/>
+        <attribute name="created" value="YWE1MTA7QTUxMDsyMDIyLTExLTIzOzA5OjMwOjU3IGEuIG0uOzIwMTM="/>
+        <attribute name="edited" value="YWE1MTA7QTUxMDsyMDIyLTExLTIzOzA5OjQyOjQ3IGEuIG0uOzQ7MjEyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, suma" type="Integer" array="False" size=""/>
+            <declare name="promedio" type="Real" array="False" size=""/>
+            <output expression="&quot;&#191;Cuantas edades?&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="edad" type="Integer" array="True" size="n"/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Edad &quot; &amp; i+1" newline="True"/>
+                <input variable="edad[i]"/>
+                <assign variable="suma" expression="suma + edad[i]"/>
+            </for>
+            <if expression="n == 0">
+                <then>
+                    <output expression="&quot;Promedio = 0&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="promedio" expression="suma / n"/>
+                    <output expression="&quot;Promedio = &quot; &amp; promedio" newline="True"/>
+                    <output expression="&quot;Edades que sobrepasan el promedio:&quot;" newline="True"/>
+                    <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                        <if expression="edad[i] &gt; promedio">
+                            <then>
+                                <output expression="edad[i]" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

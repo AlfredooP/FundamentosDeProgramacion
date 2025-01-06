@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa508"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-14 09:24:26 a. m."/>
+        <attribute name="created" value="YWE1MDg7QTUwODsyMDIyLTA5LTE0OzA5OjEzOjQ4IGEuIG0uOzIwMzU="/>
+        <attribute name="edited" value="YWE1MDg7QTUwODsyMDIyLTA5LTE0OzA5OjI0OjI2IGEuIG0uOzY7MjE0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x1, x2" type="Real" array="False" size=""/>
+            <output expression="&quot;Coeficiente del t&#233;rmino cuadr&#225;tico (a)&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Coeficiente del t&#233;rmino de primer grado (b)&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;T&#233;rmino independiente (c)&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="x1" expression="(-b + SQRT(b^2-4*a*c)) / (2*a)"/>
+            <assign variable="x2" expression="(-b - SQRT(b^2-4*a*c)) / (2*a)"/>
+            <output expression="&quot;X1 = &quot; &amp; x1" newline="True"/>
+            <output expression="&quot;X2 = &quot; &amp; x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

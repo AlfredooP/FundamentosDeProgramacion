@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa506"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-31 09:53:25 a. m."/>
+        <attribute name="created" value="YWE1MDY7QTUwNjsyMDIyLTA4LTMxOzA5OjMwOjI2IGEuIG0uOzIwMjQ="/>
+        <attribute name="edited" value="YWE1MDY7QTUwNjsyMDIyLTA4LTMxOzA5OjUzOjI1IGEuIG0uOzE7MjEzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="capacidadTanque, precioDiesel, dieselActual, dineroNecesario, dieselFaltante" type="Real" array="False" size=""/>
+            <output expression="&quot;Capacidad del tanque en litros&quot;" newline="True"/>
+            <input variable="capacidadTanque"/>
+            <output expression="&quot;Diesel actual en el tanque en litros&quot;" newline="True"/>
+            <input variable="dieselActual"/>
+            <output expression="&quot;Precio del litro de diesel&quot;" newline="True"/>
+            <input variable="precioDiesel"/>
+            <assign variable="dieselFaltante" expression="capacidadTanque - dieselActual"/>
+            <assign variable="dineroNecesario" expression="precioDiesel * dieselFaltante"/>
+            <output expression="&quot;Faltan &quot; &amp; dieselFaltante &amp; &quot; litros para llenar el tanque, por lo que requiere $&quot; &amp; dineroNecesario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

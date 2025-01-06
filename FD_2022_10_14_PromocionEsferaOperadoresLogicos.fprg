@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-14 09:39:56 a. m."/>
+        <attribute name="created" value="YWE1MTA7QTUxMDsyMDIyLTEwLTE0OzA5OjA5OjQ5IGEuIG0uOzIwMTk="/>
+        <attribute name="edited" value="YWE1MTA7QTUxMDsyMDIyLTEwLTE0OzA5OjM5OjU2IGEuIG0uOzg7MjEzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroCuenta, porcDescuento" type="Integer" array="False" size=""/>
+            <declare name="colorEsfera" type="String" array="False" size=""/>
+            <declare name="importeCompra, importeDescuento, importePago" type="Real" array="False" size=""/>
+            <output expression="&quot;Importe de compra&quot;" newline="True"/>
+            <input variable="importeCompra"/>
+            <output expression="&quot;N&#250;mero de cuenta&quot;" newline="True"/>
+            <input variable="numeroCuenta"/>
+            <output expression="&quot;Color de la esfera (B para blanco y N para negro)&quot;" newline="True"/>
+            <input variable="colorEsfera"/>
+            <if expression="colorEsfera == &quot;B&quot; &amp;&amp; numeroCuenta % 2 == 0 || colorEsfera == &quot;N&quot; &amp;&amp; numeroCuenta % 2 == 1">
+                <then>
+                    <output expression="&quot;Porcentaje de descuento&quot;" newline="True"/>
+                    <input variable="porcDescuento"/>
+                    <assign variable="importeDescuento" expression="importeCompra * porcDescuento / 100"/>
+                    <assign variable="importePago" expression="importeCompra - importeDescuento"/>
+                    <output expression="&quot;Felicidades, usted s&#243;lo pagar&#225; $&quot; &amp; importePago" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Siga participando, su pago es de $&quot; &amp; importeCompra" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa514"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 09:19:16 a. m."/>
+        <attribute name="created" value="YWE1MTQ7QTUxNDsyMDIyLTEwLTI4OzA5OjA0OjQxIGEuIG0uOzIwMTk="/>
+        <attribute name="edited" value="YWE1MTQ7QTUxNDsyMDIyLTEwLTI4OzA5OjE5OjE2IGEuIG0uOzI7MjEzNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="valor, suma, promedio" type="Real" array="False" size=""/>
+            <output expression="&quot;&#191;Cuantos n&#250;meros?&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="La variable suma es un acumulador.Un acumulador se incrementa a si mismo con un dato o variable y debe inicializarse antes de empezar a acumular"/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Valor &quot; &amp; i" newline="True"/>
+                <input variable="valor"/>
+                <assign variable="suma" expression="suma + valor"/>
+            </for>
+            <assign variable="promedio" expression="suma / n"/>
+            <output expression="&quot;Suma= &quot; &amp; suma &amp; &quot; Promedio= &quot; &amp; promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

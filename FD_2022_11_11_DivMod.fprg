@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa514"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-11 09:49:48 a. m."/>
+        <attribute name="created" value="YWE1MTQ7QTUxNDsyMDIyLTExLTExOzA5OjE2OjM3IGEuIG0uOzIwMjA="/>
+        <attribute name="edited" value="YWE1MTQ7QTUxNDsyMDIyLTExLTExOzA5OjQ5OjQ4IGEuIG0uOzM7MjEzOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dividendo, divisor, cociente, residuo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dividendo&quot;" newline="True"/>
+            <input variable="dividendo"/>
+            <output expression="&quot;Divisor&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <if expression="divisor &lt;= 0">
+                <then>
+                    <output expression="&quot;No es posible calcular DIV y MOD&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="cociente" expression="0"/>
+                    <assign variable="residuo" expression="dividendo"/>
+                    <while expression="residuo &gt;= divisor">
+                        <assign variable="residuo" expression="residuo - divisor"/>
+                        <assign variable="cociente" expression="cociente + 1"/>
+                    </while>
+                    <output expression="dividendo &amp; &quot; DIV &quot; &amp; divisor &amp; &quot; = &quot; &amp; cociente" newline="True"/>
+                    <output expression="dividendo &amp; &quot; MOD &quot; &amp; divisor &amp; &quot; = &quot; &amp; residuo" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

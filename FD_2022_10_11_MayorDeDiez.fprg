@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 09:39:19 a. m."/>
+        <attribute name="created" value="YWE1MTA7QTUxMDsyMDIyLTEwLTExOzA5OjIyOjM4IGEuIG0uOzIwMDk="/>
+        <attribute name="edited" value="YWE1MTA7QTUxMDsyMDIyLTEwLTExOzA5OjM5OjE5IGEuIG0uOzc7MjEzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, m1, m2, m3, m4" type="Real" array="False" size=""/>
+            <output expression="&quot;Primer n&#250;mero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Segundo n&#250;mero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <output expression="&quot;Tercer n&#250;mero&quot;" newline="True"/>
+            <input variable="num3"/>
+            <output expression="&quot;Cuarto n&#250;mero&quot;" newline="True"/>
+            <input variable="num4"/>
+            <output expression="&quot;Quinto n&#250;mero&quot;" newline="True"/>
+            <input variable="num5"/>
+            <output expression="&quot;Sexto n&#250;mero&quot;" newline="True"/>
+            <input variable="num6"/>
+            <output expression="&quot;S&#233;ptimo n&#250;mero&quot;" newline="True"/>
+            <input variable="num7"/>
+            <output expression="&quot;Octavo n&#250;mero&quot;" newline="True"/>
+            <input variable="num8"/>
+            <output expression="&quot;Noveno n&#250;mero&quot;" newline="True"/>
+            <input variable="num9"/>
+            <output expression="&quot;D&#233;cimo n&#250;mero&quot;" newline="True"/>
+            <input variable="num10"/>
+            <assign variable="m1" expression="MayorDeTres(num1, num2, num3)"/>
+            <assign variable="m2" expression="MayorDeTres(num4, num5, num6)"/>
+            <assign variable="m3" expression="MayorDeTres(num7, num8, num9)"/>
+            <comment text="m4 es el mayor de los primeros 9"/>
+            <assign variable="m4" expression="MayorDeTres(m1, m2, m3)"/>
+            <if expression="m4 &gt; num10">
+                <then>
+                    <output expression="&quot;El mayor es el &quot; &amp; m4" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El mayor es el &quot; &amp; num10" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="MayorDeTres" type="Real" variable="mayor">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="mayor" type="Real" array="False" size=""/>
+            <if expression="a &gt; b">
+                <then>
+                    <if expression="a &gt; c">
+                        <then>
+                            <assign variable="mayor" expression="a"/>
+                        </then>
+                        <else>
+                            <assign variable="mayor" expression="c"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b &gt; c">
+                        <then>
+                            <assign variable="mayor" expression="b"/>
+                        </then>
+                        <else>
+                            <assign variable="mayor" expression="c"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

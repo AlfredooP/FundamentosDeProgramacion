@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa514"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-20 09:55:48 a. m."/>
+        <attribute name="created" value="YWE1MTQ7QTUxNDsyMDIyLTA5LTIwOzA5OjI1OjI2IGEuIG0uOzIwMjU="/>
+        <attribute name="edited" value="YWE1MTQ7QTUxNDsyMDIyLTA5LTIwOzA5OjU1OjQ4IGEuIG0uOzg7MjE0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radioBote, alturaBote, radioCil1, radioCil2, radioCil3, altCil1, altCil2, altCil3, volAceite, volBote, volCil1, volCil2, volCil3" type="Real" array="False" size=""/>
+            <output expression="&quot;Radio del bote&quot;" newline="True"/>
+            <input variable="radioBote"/>
+            <output expression="&quot;Altura del bote&quot;" newline="True"/>
+            <input variable="alturaBote"/>
+            <output expression="&quot;Radio del cilindro 1&quot;" newline="True"/>
+            <input variable="radioCil1"/>
+            <output expression="&quot;Altura del cilindro 1&quot;" newline="True"/>
+            <input variable="altCil1"/>
+            <output expression="&quot;Radio del cilindro 2&quot;" newline="True"/>
+            <input variable="radioCil2"/>
+            <output expression="&quot;Altura del cilindro 2&quot;" newline="True"/>
+            <input variable="altCil2"/>
+            <output expression="&quot;Radio del cilindro 3&quot;" newline="True"/>
+            <input variable="radioCil3"/>
+            <output expression="&quot;Altura del cilindro 3&quot;" newline="True"/>
+            <input variable="altCil3"/>
+            <comment text="Mandamos llamar cuatro veces la funci&#243;n"/>
+            <assign variable="volBote" expression="volumenCilindro (radioBote, alturaBote)"/>
+            <assign variable="volCil1" expression="volumenCilindro (radioCil1, altCil1)"/>
+            <assign variable="volCil2" expression="volumenCilindro (radioCil2, altCil2)"/>
+            <assign variable="volCil3" expression="volumenCilindro (radioCil3, altCil3)"/>
+            <assign variable="volAceite" expression="volBote - (volCil1 + volCil2 + volCil3)"/>
+            <output expression="&quot;Volumen del aceite que qued&#243;: &quot; &amp; volAceite" newline="True"/>
+        </body>
+    </function>
+    <function name="volumenCilindro" type="Real" variable="volumen">
+        <parameters>
+            <parameter name="radio" type="Real" array="False"/>
+            <parameter name="altura" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="volumen" type="Real" array="False" size=""/>
+            <assign variable="volumen" expression="PI * radio^2 * altura"/>
+        </body>
+    </function>
+</flowgorithm>

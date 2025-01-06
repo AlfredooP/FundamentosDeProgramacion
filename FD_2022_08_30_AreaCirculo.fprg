@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa510"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-30 09:45:00 a. m."/>
+        <attribute name="created" value="YWE1MTA7QTUxMDsyMDIyLTA4LTMwOzA5OjE0OjAwIGEuIG0uOzIwMDc="/>
+        <attribute name="edited" value="YWE1MTA7QTUxMDsyMDIyLTA4LTMwOzA5OjQ1OjAwIGEuIG0uOzI7MjEyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radio, area, circunferencia, diametro" type="Real" array="False" size=""/>
+            <output expression="&quot;Radio del circulo&quot;" newline="True"/>
+            <input variable="radio"/>
+            <assign variable="area" expression="PI * radio ^ 2"/>
+            <assign variable="diametro" expression="radio * 2"/>
+            <assign variable="circunferencia" expression="PI * diametro"/>
+            <output expression="&quot;Area =&quot; &amp; area" newline="True"/>
+            <output expression="&quot;Circunferencia =&quot; &amp; circunferencia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

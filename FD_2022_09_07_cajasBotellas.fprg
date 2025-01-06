@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa509"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-07 09:49:11 a. m."/>
+        <attribute name="created" value="YWE1MDk7QTUwOTsyMDIyLTA5LTA3OzA5OjMyOjQwIGEuIG0uOzIwMzI="/>
+        <attribute name="edited" value="YWE1MDk7QTUwOTsyMDIyLTA5LTA3OzA5OjQ5OjExIGEuIG0uOzI7MjE0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroBotellas, botellasPorCaja, cajasCompletas, botellasSueltas" type="Integer" array="False" size=""/>
+            <output expression="&quot;N&#250;mero de botellas a acomodar en cajas&quot;" newline="True"/>
+            <input variable="numeroBotellas"/>
+            <output expression="&quot;Botellas por caja&quot;" newline="True"/>
+            <input variable="botellasPorCaja"/>
+            <comment text="Si al dividir 2 enteros resulta con decimales, al asignar una variable entera, se guarda solo el entero (DIV)"/>
+            <assign variable="cajasCompletas" expression="numeroBotellas / botellasPorCaja"/>
+            <comment text="El operador % regresa el residuo de la division de 2 enteros"/>
+            <assign variable="botellasSueltas" expression="numeroBotellas % botellasPorCaja"/>
+            <output expression="&quot;Se completaron &quot; &amp; cajasCompletas &amp; &quot; cajas y quedaron &quot; &amp; botellasSueltas &amp; &quot; botellas sueltas&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

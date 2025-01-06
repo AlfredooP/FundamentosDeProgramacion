@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa514"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-09 09:24:28 a. m."/>
+        <attribute name="created" value="YWE1MTQ7QTUxNDsyMDIyLTExLTA5OzA5OjE2OjI2IGEuIG0uOzIwMjU="/>
+        <attribute name="edited" value="YWE1MTQ7QTUxNDsyMDIyLTExLTA5OzA5OjI0OjI4IGEuIG0uOzI7MjEzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="exponente, i" type="Integer" array="False" size=""/>
+            <declare name="base, pot" type="Real" array="False" size=""/>
+            <output expression="&quot;Base&quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Exponente&quot;" newline="True"/>
+            <input variable="exponente"/>
+            <assign variable="pot" expression="1"/>
+            <for variable="i" start="1" end="exponente" direction="inc" step="1">
+                <assign variable="pot" expression="pot*base"/>
+            </for>
+            <output expression="base &amp; &quot; a la potencia &quot; &amp; exponente &amp; &quot; = &quot; &amp; pot" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

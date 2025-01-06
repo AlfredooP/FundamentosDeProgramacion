@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa511"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-07 09:26:19 a. m."/>
+        <attribute name="created" value="YWE1MTE7QTUxMTsyMDIyLTEwLTA3OzA5OjEwOjUyIGEuIG0uOzIwMDk="/>
+        <attribute name="edited" value="YWE1MTE7QTUxMTsyMDIyLTEwLTA3OzA5OjI2OjE5IGEuIG0uOzQ7MjEzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fisica, quimica, mate" type="Integer" array="False" size=""/>
+            <declare name="promedio" type="Real" array="False" size=""/>
+            <output expression="&quot;Calificaci&#243;n de F&#237;sica&quot;" newline="True"/>
+            <input variable="fisica"/>
+            <output expression="&quot;Calificaci&#243;n de Qu&#237;mica&quot;" newline="True"/>
+            <input variable="quimica"/>
+            <output expression="&quot;Calificaci&#243;n de Matem&#225;ticas&quot;" newline="True"/>
+            <input variable="mate"/>
+            <assign variable="promedio" expression="(fisica + quimica + mate) / 3"/>
+            <if expression="promedio &gt;= 70">
+                <then>
+                    <output expression="&quot;Acredit&#243; el curso con &quot; &amp; promedio" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No acredit&#243; ya que obtuvo un promedio de &quot; &amp; promedio" newline="True"/>
+                    <if expression="promedio &lt; 40">
+                        <then>
+                            <output expression="&quot;Debe llevar el curso de regularizaci&#243;n&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <if expression="fisica &gt;= 70">
+                <then>
+                    <if expression="quimica &gt;= 70">
+                        <then>
+                            <if expression="mate &gt;= 70">
+                                <then>
+                                    <output expression="&quot;Aprob&#243; las 3 materias&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <if expression="fisica == 100">
+                <then>
+                    <output expression="&quot;Obtuvo 100 en f&#237;sica&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="quimica == 100">
+                <then>
+                    <output expression="&quot;Obtuvo 100 en qu&#237;mica&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mate == 100">
+                <then>
+                    <output expression="&quot;Obtuvo 100 en matem&#225;ticas&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="fisica &gt; 95">
+                <then>
+                    <if expression="quimica &gt; 95">
+                        <then>
+                            <if expression="mate &gt; 95">
+                                <then>
+                                    <output expression="&quot;Felicidades, obtuvo menci&#243;n honor&#237;fica&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

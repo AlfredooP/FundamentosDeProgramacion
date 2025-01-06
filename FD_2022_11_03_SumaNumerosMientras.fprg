@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa512"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-03 09:24:23 a. m."/>
+        <attribute name="created" value="YWE1MTI7QTUxMjsyMDIyLTExLTAzOzA5OjEyOjQzIGEuIG0uOzIwMTA="/>
+        <attribute name="edited" value="YWE1MTI7QTUxMjsyMDIyLTExLTAzOzA5OjI0OjIzIGEuIG0uOzM7MjEyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="valor, suma, promedio" type="Real" array="False" size=""/>
+            <declare name="continuar" type="String" array="False" size=""/>
+            <assign variable="suma" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <output expression="&quot;&#191;Desea iniciar? (S/N)&quot;" newline="True"/>
+            <input variable="continuar"/>
+            <while expression="continuar == &quot;s&quot; || continuar == &quot;S&quot;">
+                <output expression="&quot;Valor&quot;" newline="True"/>
+                <input variable="valor"/>
+                <assign variable="n" expression="n + 1"/>
+                <assign variable="suma" expression="suma + valor"/>
+                <output expression="&quot;&#191;Continuar? (S/N)&quot;" newline="True"/>
+                <input variable="continuar"/>
+            </while>
+            <if expression="n == 0">
+                <then>
+                    <assign variable="promedio" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="promedio" expression="suma / n"/>
+                </else>
+            </if>
+            <output expression="&quot;Suma = &quot; &amp; suma" newline="True"/>
+            <output expression="&quot;Promedio = &quot; &amp; promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
